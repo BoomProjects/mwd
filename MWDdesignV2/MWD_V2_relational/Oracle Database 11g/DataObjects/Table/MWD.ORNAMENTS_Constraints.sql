@@ -1,0 +1,1 @@
+ALTER TABLE mwd.ornaments ADD CONSTRAINT ornaments_pk PRIMARY KEY ( created_item_id );

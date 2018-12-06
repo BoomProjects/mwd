@@ -1,0 +1,1 @@
+ALTER TABLE mwd.colors ADD CONSTRAINT colors_pk PRIMARY KEY ( name );

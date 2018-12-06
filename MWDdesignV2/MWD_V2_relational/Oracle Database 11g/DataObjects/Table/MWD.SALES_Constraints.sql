@@ -1,0 +1,1 @@
+ALTER TABLE mwd.sales ADD CONSTRAINT sales_pk PRIMARY KEY ( order_id );

@@ -1,0 +1,1 @@
+ALTER TABLE mwd.chains ADD CONSTRAINT chains_pk PRIMARY KEY ( chain_id );

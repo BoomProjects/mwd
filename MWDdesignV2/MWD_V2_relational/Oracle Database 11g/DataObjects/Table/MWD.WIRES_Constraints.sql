@@ -1,0 +1,1 @@
+ALTER TABLE mwd.wires ADD CONSTRAINT wires_pk PRIMARY KEY ( wire_id );

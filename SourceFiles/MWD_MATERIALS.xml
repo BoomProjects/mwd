@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">materialId</Data></Cell>
+			<Cell><Data ss:Type="String">abbreviation</Data></Cell>
+			<Cell><Data ss:Type="String">baseMaterial</Data></Cell>
+			<Cell><Data ss:Type="String">processing</Data></Cell>
+			<Cell><Data ss:Type="String">processingMaterial</Data></Cell>
+			<Cell><Data ss:Type="String">allergensExcluded</Data></Cell>
+			<Cell><Data ss:Type="String">baseMaterialsIncluded</Data></Cell>
+			<Cell><Data ss:Type="String">parent_materialId</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="String">OTH</Data></Cell>
+			<Cell><Data ss:Type="String">OTHER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">UNKNOWN</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+			<Cell><Data ss:Type="String">OTH-MET</Data></Cell>
+			<Cell><Data ss:Type="String">OTHER METAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+			<Cell><Data ss:Type="String">SST</Data></Cell>
+			<Cell><Data ss:Type="String">STAINLESS STEEL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">UNKNOWN</Data></Cell>
+			<Cell><Data ss:Type="Number">11</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="String">SST-BL</Data></Cell>
+			<Cell><Data ss:Type="String">STAINLESS STEEL</Data></Cell>
+			<Cell><Data ss:Type="String">BLACKENED</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+			<Cell><Data ss:Type="String">PL-SST</Data></Cell>
+			<Cell><Data ss:Type="String">STAINLESS STEEL</Data></Cell>
+			<Cell><Data ss:Type="String">PLATED</Data></Cell>
+			<Cell><Data ss:Type="String">OTHER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">6</Data></Cell>
+			<Cell><Data ss:Type="String">PL-SST-TI</Data></Cell>
+			<Cell><Data ss:Type="String">STAINLESS STEEL</Data></Cell>
+			<Cell><Data ss:Type="String">PLATED</Data></Cell>
+			<Cell><Data ss:Type="String">TITANIUM</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">TITANIUM</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">7</Data></Cell>
+			<Cell><Data ss:Type="String">BA</Data></Cell>
+			<Cell><Data ss:Type="String">BASE ALUMINIUM</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">ALUMINIUM</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">8</Data></Cell>
+			<Cell><Data ss:Type="String">AA</Data></Cell>
+			<Cell><Data ss:Type="String">ALUMINIUM</Data></Cell>
+			<Cell><Data ss:Type="String">ANODIZED</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number">7</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">9</Data></Cell>
+			<Cell><Data ss:Type="String">EA</Data></Cell>
+			<Cell><Data ss:Type="String">ALUMINIUM</Data></Cell>
+			<Cell><Data ss:Type="String">ENAMELLED</Data></Cell>
+			<Cell><Data ss:Type="String">PLASTIC</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PLASTIC</Data></Cell>
+			<Cell><Data ss:Type="Number">7</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">10</Data></Cell>
+			<Cell><Data ss:Type="String">BRO</Data></Cell>
+			<Cell><Data ss:Type="String">BRONZE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">COPPER, TIN</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">11</Data></Cell>
+			<Cell><Data ss:Type="String">ST</Data></Cell>
+			<Cell><Data ss:Type="String">STEEL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">IRON, CARBON</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+			<Cell><Data ss:Type="String">SI</Data></Cell>
+			<Cell><Data ss:Type="String">PURE SILVER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">SILVER</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">13</Data></Cell>
+			<Cell><Data ss:Type="String">SS</Data></Cell>
+			<Cell><Data ss:Type="String">STERLING SILVER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">COPPER</Data></Cell>
+			<Cell><Data ss:Type="Number">12</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">14</Data></Cell>
+			<Cell><Data ss:Type="String">CO</Data></Cell>
+			<Cell><Data ss:Type="String">COPPER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">COPPER</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">SI-FI-CO</Data></Cell>
+			<Cell><Data ss:Type="String">COPPER</Data></Cell>
+			<Cell><Data ss:Type="String">FILLED</Data></Cell>
+			<Cell><Data ss:Type="String">SILVER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">SILVER</Data></Cell>
+			<Cell><Data ss:Type="Number">14</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">SI-PL-CO</Data></Cell>
+			<Cell><Data ss:Type="String">COPPER</Data></Cell>
+			<Cell><Data ss:Type="String">PLATED</Data></Cell>
+			<Cell><Data ss:Type="String">SILVER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">SILVER</Data></Cell>
+			<Cell><Data ss:Type="Number">14</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">16</Data></Cell>
+			<Cell><Data ss:Type="String">GO-PL-CO</Data></Cell>
+			<Cell><Data ss:Type="String">COPPER</Data></Cell>
+			<Cell><Data ss:Type="String">PLATED</Data></Cell>
+			<Cell><Data ss:Type="String">GOLD</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">GOLD</Data></Cell>
+			<Cell><Data ss:Type="Number">14</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">17</Data></Cell>
+			<Cell><Data ss:Type="String">ZI</Data></Cell>
+			<Cell><Data ss:Type="String">ZINC</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">ZINC</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">18</Data></Cell>
+			<Cell><Data ss:Type="String">ZI-ALL</Data></Cell>
+			<Cell><Data ss:Type="String">ZINC ALLOY</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">LEAD, NICKEL, CADMIUM</Data></Cell>
+			<Cell><Data ss:Type="String">UNKNOWN</Data></Cell>
+			<Cell><Data ss:Type="Number">17</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">20</Data></Cell>
+			<Cell><Data ss:Type="String">BRA</Data></Cell>
+			<Cell><Data ss:Type="String">BRASS</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">COPPER, ZINC</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">21</Data></Cell>
+			<Cell><Data ss:Type="String">LE</Data></Cell>
+			<Cell><Data ss:Type="String">LEATHER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">ANIMAL HIDE</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">22</Data></Cell>
+			<Cell><Data ss:Type="String">SU</Data></Cell>
+			<Cell><Data ss:Type="String">SUEDE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number">21</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">23</Data></Cell>
+			<Cell><Data ss:Type="String">FA-LE</Data></Cell>
+			<Cell><Data ss:Type="String">FAUX LEATHER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">UNKNOWN</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">24</Data></Cell>
+			<Cell><Data ss:Type="String">FA-SU</Data></Cell>
+			<Cell><Data ss:Type="String">FAUX SUEDE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">UNKNOWN</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">25</Data></Cell>
+			<Cell><Data ss:Type="String">OTH-STO</Data></Cell>
+			<Cell><Data ss:Type="String">OTHER STONE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">26</Data></Cell>
+			<Cell><Data ss:Type="String">GEM</Data></Cell>
+			<Cell><Data ss:Type="String">GEMSTONE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">27</Data></Cell>
+			<Cell><Data ss:Type="String">WOO</Data></Cell>
+			<Cell><Data ss:Type="String">WOOD</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">WOOD</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">28</Data></Cell>
+			<Cell><Data ss:Type="String">GLA</Data></Cell>
+			<Cell><Data ss:Type="String">GLASS</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">GLASS</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">29</Data></Cell>
+			<Cell><Data ss:Type="String">OTH-RUB</Data></Cell>
+			<Cell><Data ss:Type="String">OTHER RUBBER</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">RUBBER</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">30</Data></Cell>
+			<Cell><Data ss:Type="String">EPDM</Data></Cell>
+			<Cell><Data ss:Type="String">EPDM</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">RUBBER</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">31</Data></Cell>
+			<Cell><Data ss:Type="String">SU-SST</Data></Cell>
+			<Cell><Data ss:Type="String">SURGICAL STAINLESS STEEL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

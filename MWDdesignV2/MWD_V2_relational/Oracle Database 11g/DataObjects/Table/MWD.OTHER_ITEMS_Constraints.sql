@@ -1,0 +1,1 @@
+ALTER TABLE mwd.other_items ADD CONSTRAINT other_items_pk PRIMARY KEY ( other_item_id );

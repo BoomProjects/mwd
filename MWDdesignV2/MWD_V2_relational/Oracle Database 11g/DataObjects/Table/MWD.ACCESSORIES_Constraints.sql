@@ -1,0 +1,1 @@
+ALTER TABLE mwd.accessories ADD CONSTRAINT accessories_pk PRIMARY KEY ( created_item_id );

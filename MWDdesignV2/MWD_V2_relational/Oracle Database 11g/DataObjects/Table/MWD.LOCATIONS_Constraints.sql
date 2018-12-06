@@ -1,0 +1,1 @@
+ALTER TABLE mwd.locations ADD CONSTRAINT locations_pk PRIMARY KEY ( location_id );

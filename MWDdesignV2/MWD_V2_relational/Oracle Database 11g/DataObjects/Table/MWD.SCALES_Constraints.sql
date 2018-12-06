@@ -1,0 +1,1 @@
+ALTER TABLE mwd.scales ADD CONSTRAINT scales_pk PRIMARY KEY ( scale_id );

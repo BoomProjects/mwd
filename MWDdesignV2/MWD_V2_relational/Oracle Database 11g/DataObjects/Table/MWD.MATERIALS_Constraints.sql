@@ -1,0 +1,1 @@
+ALTER TABLE mwd.materials ADD CONSTRAINT materials_pk PRIMARY KEY ( abbreviation );

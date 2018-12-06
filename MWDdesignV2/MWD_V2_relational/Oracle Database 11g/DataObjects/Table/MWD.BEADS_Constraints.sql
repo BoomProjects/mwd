@@ -1,0 +1,1 @@
+ALTER TABLE mwd.beads ADD CONSTRAINT beads_pk PRIMARY KEY ( bead_id );

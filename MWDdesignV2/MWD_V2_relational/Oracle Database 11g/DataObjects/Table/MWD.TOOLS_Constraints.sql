@@ -1,0 +1,1 @@
+ALTER TABLE mwd.tools ADD CONSTRAINT tools_pk PRIMARY KEY ( tool_id );

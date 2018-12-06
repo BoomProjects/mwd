@@ -1,0 +1,1 @@
+ALTER TABLE mwd.lace ADD CONSTRAINT lace_pk PRIMARY KEY ( lace_id );

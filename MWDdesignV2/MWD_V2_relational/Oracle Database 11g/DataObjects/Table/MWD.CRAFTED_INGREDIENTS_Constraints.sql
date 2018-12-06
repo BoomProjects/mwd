@@ -1,0 +1,1 @@
+ALTER TABLE mwd.crafted_ingredients ADD CONSTRAINT crafted_ingredients_pk PRIMARY KEY ( crafted_ingredient_id );

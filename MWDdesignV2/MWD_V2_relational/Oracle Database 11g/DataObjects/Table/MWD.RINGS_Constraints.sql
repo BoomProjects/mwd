@@ -1,0 +1,1 @@
+ALTER TABLE mwd.rings ADD CONSTRAINT rings_pk PRIMARY KEY ( ring_id );

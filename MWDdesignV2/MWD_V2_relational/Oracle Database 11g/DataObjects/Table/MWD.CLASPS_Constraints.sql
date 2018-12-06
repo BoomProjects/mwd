@@ -1,0 +1,1 @@
+ALTER TABLE mwd.clasps ADD CONSTRAINT clasps_pk PRIMARY KEY ( clasp_id );

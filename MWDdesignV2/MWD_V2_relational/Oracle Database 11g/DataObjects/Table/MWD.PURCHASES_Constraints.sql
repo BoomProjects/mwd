@@ -1,0 +1,1 @@
+ALTER TABLE mwd.purchases ADD CONSTRAINT purchases_pk PRIMARY KEY ( order_id );

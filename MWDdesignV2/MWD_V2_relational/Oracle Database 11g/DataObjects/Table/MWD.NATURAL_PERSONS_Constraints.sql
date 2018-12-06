@@ -1,0 +1,1 @@
+ALTER TABLE mwd.natural_persons ADD CONSTRAINT natural_persons_pk PRIMARY KEY ( person_id );
