@@ -3939,11 +3939,6 @@ ALTER TABLE mwd.clasps
             ON DELETE CASCADE
     NOT DEFERRABLE;
 
-ALTER TABLE mwd.colors
-    ADD CONSTRAINT colors_fk FOREIGN KEY ( added_color )
-        REFERENCES mwd.colors ( name )
-    NOT DEFERRABLE;
-
 ALTER TABLE mwd.crafted_ingredients
     ADD CONSTRAINT crafted_ingredients_fk FOREIGN KEY ( crafted_ingredient_id )
         REFERENCES mwd.ingredients ( ingredient_id )
@@ -4074,11 +4069,6 @@ ALTER TABLE mwd.location_addresses
     ADD CONSTRAINT location_addresses_fk FOREIGN KEY ( location_id )
         REFERENCES mwd.locations ( location_id )
             ON DELETE CASCADE
-    NOT DEFERRABLE;
-
-ALTER TABLE mwd.materials
-    ADD CONSTRAINT materials_materials_fk FOREIGN KEY ( parent_material )
-        REFERENCES mwd.materials ( abbreviation )
     NOT DEFERRABLE;
 
 ALTER TABLE mwd.natural_persons
