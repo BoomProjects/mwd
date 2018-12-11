@@ -7,7 +7,7 @@
 create or replace package MWD_BO_P3010_PKG as
 
 	procedure init_page;
-		
+
 end MWD_BO_P3010_PKG;
 
 / 
@@ -15,13 +15,11 @@ end MWD_BO_P3010_PKG;
 create or replace package body MWD_BO_P3010_PKG as
 
 	procedure init_page
-	is
-      v_domain_name varchar2(100);
+    is
 	begin
-			APEX_UTIL.set_session_state(
-				  p_name  => 'P_ORDER_TYPE_LOV'
-				, p_value => 'ORDER_TYPE');
-
+		APEX_UTIL.set_session_state(
+			  p_name  => 'P_ORDER_TYPE_LOV'
+			, p_value => 'ORDER_TYPE');
 	end init_page;
-	
+
 end MWD_BO_P3010_PKG;
