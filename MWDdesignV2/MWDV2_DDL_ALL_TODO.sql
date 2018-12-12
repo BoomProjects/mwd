@@ -4284,10 +4284,8 @@ BEGIN
 	if :new.material is not null then
 		select nvl(count(*),0)
 			into value_in_mat_list
-			from domains
-			where domain_name = 'ITEM_MATERIAL'
-			and active = 'Y'
-			and domain_value = :new.material;
+			from MATERIALS
+			where ABBREVIATION = :new.material;
 
 			if (value_in_mat_list = 0) then -- treat as if null to assign default.
 				:new.material := null;
@@ -4297,10 +4295,8 @@ BEGIN
 	if :new.color is not null then
 		select nvl(count(*),0)
 			into value_in_col_list
-			from domains
-			where domain_name = 'ITEM_COLOR'
-			and active = 'Y'
-			and domain_value = :new.color;
+			from COLORS
+			where NAME = :new.color;
 
 			if (value_in_col_list = 0) then -- treat as if null to assign default.
 				:new.color := null;
@@ -4311,20 +4307,11 @@ BEGIN
 		select domain_value_id, active 
 			into cat_id, is_active
 			from domains 
-			where domain_name = 'INGREDIENT_CATEGORY'
+			where domain_name = 'INGREDIENT_TYPE'
 			and domain_value = :new.ingredient_type;
 
-		if (is_active = 'Y') then
-			select domain_value
-			into default_subcat
-			from domains
-			group by domain_value
-			having sort_order = min(sort_order)  -- take lowest sequence value in domain.
-			and domain_name = 'INGREDIENT_SUBCATEGORY'
-			and active = 'Y'
-			and parent_domain_value_id = cat_id;
-
-		else -- if category <> active, treat as null.
+		if (is_active <> 'Y') then
+			-- if category <> active, treat as null.
 			:new.ingredient_type := null;
 		end if;
 	end if;
@@ -4346,7 +4333,8 @@ BEGIN
 
 		IF :NEW.INNER_DIAMETER_MM IS NOT NULL THEN
 			:NEW.ASPECT_RATIO := :new.inner_diameter_mm / :new.wire_diameter_mm;
-			if :new.outer_diameter_mm is not null then
+			
+			if :new.outer_diameter_mm is null then
 				:NEW.OUTER_DIAMETER_MM := (:new.wire_diameter_mm * 2) + :new.inner_diameter_mm;
 			end if;
 		END IF;
@@ -4435,68 +4423,58 @@ CREATE OR REPLACE TRIGGER MWD.ITEMS_BRIU
     BEFORE INSERT OR UPDATE ON MWD.ITEMS 
     FOR EACH ROW 
 DECLARE 
-  prod_id number;
+  item_id number;
   is_active char(1);
-  default_subcat varchar2(30) := 'OTHER';
-  cat_id number;
-  value_in_cat_list number;
-  value_in_ava_list number;
-  value_in_sal_list number;
+  type_id number;
+  value_in_type_list number;
+  value_in_avai_list number;
+  value_in_sale_list number;
 BEGIN 
   if inserting then   
     if :new.item_id is null then 
       select item_seq.nextval 
-        into prod_id 
+        into item_id 
         from dual; 
-      :new.item_id := prod_id; 
+      :new.item_id := item_id; 
     end if; 
   end if; 
 
   	-- in lieu of check constraint.
 	if :new.availability is not null then
 		select nvl(count(*),0)
-			into value_in_ava_list
+			into value_in_avai_list
 			from domains
 			where domain_name = 'ITEM_AVAILABILITY'
 			and active = 'Y'
 			and domain_value = :new.availability;
 
-		if (value_in_ava_list = 0) then -- treat as if null.
+		if (value_in_avai_list = 0) then -- treat as if null.
 			:new.availability := null;
 		end if;
 	end if; 
 
 	if :new.sale_status is not null then
 		select nvl(count(*),0)
-			into value_in_sal_list
+			into value_in_sale_list
 			from domains
 			where domain_name = 'ITEM_SALE_STATUS'
 			and active = 'Y'
 			and domain_value = :new.sale_status;
 
-		if (value_in_sal_list = 0) then -- treat as if null.
+		if (value_in_sale_list = 0) then -- treat as if null.
 			:new.sale_status := null;
 		end if;
 	end if;   
 
   if :new.item_type is not null then
 		select domain_value_id, active 
-			into cat_id, is_active
+			into type_id, is_active
 			from domains 
-			where domain_name = 'ITEM_CATEGORY' 
+			where domain_name = 'ITEM_TYPE' 
 			and domain_value = :new.item_type;
 
-		if (is_active = 'Y') then
-			select domain_value
-			into default_subcat
-			from domains
-			group by domain_value
-			having sort_order = min(sort_order)  -- take lowest sequence value in domain.
-			and domain_name = 'ITEM_SUBCATEGORY'
-			and active = 'Y'
-			and parent_domain_value_id = cat_id;
-
-		else -- if category <> active, treat as null.
+		if (is_active <> 'Y') then
+			-- if item type <> active, treat as null.
 			:new.item_type := null;
 		end if;
 	end if;
