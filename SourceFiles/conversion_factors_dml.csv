@@ -1,0 +1,78 @@
+Name of unit,Symbol,Definition,Meter Factor,Conversion Type
+ångström,Å,1*10^-10 m,1.00E-10,LENGTH
+astronomical unit,AU,149597870700 m approx. Distance from Earth to Sun,1.50E+11,LENGTH
+attometre,am,1*10^-18 m,1.00E-18,LENGTH
+barleycorn (H),'',1/3 in (see note above about rounding),0.00846,LENGTH
+"bohr, atomic unit of length",a0,Bohr radius of hydrogen,5.29E-11,LENGTH
+cable length (imperial),'',608 ft,185.3184,LENGTH
+cable length (International),'',1/10 nmi,185.2,LENGTH
+cable length (US),'',720 ft,219.456,LENGTH
+chain (Gunter; Surveyor),ch,66 ft (US) equals 4 rods,20.11684,LENGTH
+cubit (H),'',Distance from fingers to elbow approx. 18 in,0.5,LENGTH
+ell (H),ell,45 in (In England usually),1.143,LENGTH
+fathom,ftm,6 ft,1.8288,LENGTH
+femtometre,fm,1*10^-15 m,1.00E-15,LENGTH
+fermi,fm,1*10^-15 m,1.00E-15,LENGTH
+finger,'',7/8 in,0.022225,LENGTH
+finger (cloth),'',4 1/2 in,0.1143,LENGTH
+foot (Benoît) (H),ft (Ben),'',0.304799735,LENGTH
+foot (Cape) (H),'',Legally defined as 1.033 English feet in 1859,0.314858,LENGTH
+foot (Clarke) (H),ft (Cla),'',0.304797265,LENGTH
+foot (Indian) (H),ft Ind,'',0.304799514,LENGTH
+"foot, metric",mf,root of 1/10 m,0.316227766,LENGTH
+"foot, metric (long)",lmf,1/3 m,0.3,LENGTH
+"foot, metric (short)",smf,0.30 m,0.3,LENGTH
+foot (International),ft,0.3048 m equals 1/3 yd equals 12 inches,0.3048,LENGTH
+foot (Sear) (H),ft (Sear),'',0.30479947,LENGTH
+foot (US Survey),ft (US),1200/3937 m,0.30480061,LENGTH
+french; charriere,F,1/3 mm,0.0003,LENGTH
+furlong,fur,10 chains equals 660 ft equals 220 yd,201.168,LENGTH
+hand,'',4 in,0.1016,LENGTH
+inch (International),in,2.54 cm equals 1/36 yd equals 1/12 ft,0.0254,LENGTH
+league (land),lea,"approx. equals 1 hour walk, Currently defined in US as 3 Statute miles, but historically varied from 2 to 9 km",4828,LENGTH
+light-day,'',24 light-hours,2623.879526,LENGTH
+light-hour,'',60 light-minutes,1092.203883,LENGTH
+light-minute,'',60 light-seconds,1816.742295,LENGTH
+light-second,'',Distance light travels in one second in vacuum,299792458,LENGTH
+light-year,ly,Distance light travels in vacuum in 365.25 days,9.46E+15,LENGTH
+line,ln,1/12 in,0.002116,LENGTH
+link (Gunter; Surveyor),lnk,1/100 ch 0.66 ft (US) equals 7.92 in,0.2011684,LENGTH
+link (Ramsden; Engineer),lnk,1 ft,0.3048,LENGTH
+metre (SI base unit) (meter),m,Distance light travels in 1/299792458 of a second in vacuum. approx. equals 1/10000000 of the distance from equator to pole.,1,LENGTH
+mickey,'',1/200 in,0.000127,LENGTH
+micrometre (old: micron),UNISTR(''\00B5''); UNISTR(''\00B5m''),1*10^-6 m,0.000001,LENGTH
+mil; thou,mil,1*10^-3 in,0.0000254,LENGTH
+mil (Sweden and Norway),mil,10 km,10000,LENGTH
+mile (geographical) (H),'', 6082 ft,1853.7936,LENGTH
+mile (international),mi,80 chains equals 5280 ft equals 1760 yd,1609.344,LENGTH
+mile (tactical or data),'',6000 ft,1828.8,LENGTH
+mile (telegraph) (H),mi,6087 ft,1855.3176,LENGTH
+mile (US Survey),mi,5280 US Survey feet equals (5280* 1200/3937) m,1609.347219,LENGTH
+nail (cloth),'',2 1/4 in,0.05715,LENGTH
+nanometre,nm,1*10^-9 m,0.000000001,LENGTH
+nautical league,NL; nl,3 nmi,5556,LENGTH
+nautical mile (Admiralty),NM (Adm); nmi (Adm),6080 ft,1853.184,LENGTH
+nautical mile (international),NM; nmi,1852 m,1852,LENGTH
+nautical mile (US pre 1954),'',1853.248 m,1853.248,LENGTH
+pace,'',2.5 ft,0.762,LENGTH
+palm,'',3 in,0.0762,LENGTH
+parsec,pc,648000/pi AU; Distant point with a parallax shift of one arc second from a base of one astronomical unit. ,3.09E+16,LENGTH
+pica,'',12 points,0.00451128,LENGTH
+picometre,pm,1*10^-12 m,1.00E-12,LENGTH
+"point (American, English)",pt,1/72.272 in,0.00035145,LENGTH
+point (Didot; European),pt,1/12 * 1/72 of pied du roi (0.00037597 m); After 1878: 5/133 cm,0.00037594,LENGTH
+point (PostScript),pt,1/72 in,0.0003527,LENGTH
+point (TeX),pt,1/72.27 in,0.00035146,LENGTH
+quarter,'',1/4 yd,0.2286,LENGTH
+rod; pole; perch (H),rd,16 1/2 ft,5.0292,LENGTH
+rope (H),rope,20 ft,6.096,LENGTH
+shaku (Japan),'',10/33 m,0.3030303,LENGTH
+span (H),'',9 in,0.2286,LENGTH
+spat,'','',1012,LENGTH
+stick (H),'',2 in,0.0508,LENGTH
+"toise (French, post 1667) (H)",T,27000/13853 m,1.9490363,LENGTH
+twip,twp,1/1440 in,0.000017638,LENGTH
+x unit; siegbahn,xu,'',1.00E-13,LENGTH
+yard (International),yd,0.9144 m equals 3 ft equals 36 in,0.9144,LENGTH
+yoctometre,ym,1*10^-24 m,1.00E-24,LENGTH
+zeptometre,zm,1*10^-21 m,1.00E-21,LENGTH
