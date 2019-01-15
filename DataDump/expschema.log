@@ -1,0 +1,124 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Di Jan 15 22:48:18 2019
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Starting "SYSTEM"."SYS_EXPORT_SCHEMA_01":  SYSTEM/******** SCHEMAS=mwd DIRECTORY=dmpdir DUMPFILE=schema.dmp LOGFILE=expschema.log 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 2.375 MB
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/PACKAGE/PACKAGE_SPEC
+Processing object type SCHEMA_EXPORT/PACKAGE/COMPILE_PACKAGE/PACKAGE_SPEC/ALTER_PACKAGE_SPEC
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/VIEW/CONSTRAINT
+Processing object type SCHEMA_EXPORT/PACKAGE/PACKAGE_BODY
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+. . exported "MWD"."WEAVES_JN"                           51.86 KB     111 rows
+. . exported "MWD"."AMERICAN_WIRE_GAUGES"                7.101 KB      44 rows
+. . exported "MWD"."AMERICAN_WIRE_GAUGES_JN"             11.11 KB      44 rows
+. . exported "MWD"."COLORS"                              8.210 KB      36 rows
+. . exported "MWD"."COLORS_JN"                           15.01 KB      74 rows
+. . exported "MWD"."CONVERSION_FACTORS"                  11.42 KB      77 rows
+. . exported "MWD"."CRAFTED_INGREDIENTS_JN"              8.843 KB       1 rows
+. . exported "MWD"."CREATED_ITEMS_JN"                    8.078 KB       3 rows
+. . exported "MWD"."DOMAINS"                             20.58 KB     123 rows
+. . exported "MWD"."DOMAINS_JN"                          27.97 KB     127 rows
+. . exported "MWD"."HTMLDB_PLAN_TABLE"                   20.23 KB       3 rows
+. . exported "MWD"."INGREDIENTS_JN"                      13.05 KB      10 rows
+. . exported "MWD"."ITEM_INGREDIENTS_JN"                 9.703 KB       7 rows
+. . exported "MWD"."ITEMS_JN"                            22.50 KB      87 rows
+. . exported "MWD"."KIT_ITEMS_JN"                        9.304 KB       2 rows
+. . exported "MWD"."KITS_JN"                             9.195 KB       1 rows
+. . exported "MWD"."LEGAL_PERSONS_JN"                    8.804 KB       7 rows
+. . exported "MWD"."LOCATION_ADDRESSES_JN"               13.26 KB       7 rows
+. . exported "MWD"."LOCATIONS_JN"                        7.929 KB       1 rows
+. . exported "MWD"."MATERIALS"                           8.703 KB      37 rows
+. . exported "MWD"."MATERIALS_JN"                        24.64 KB     174 rows
+. . exported "MWD"."NATURAL_PERSONS_JN"                  8.687 KB       6 rows
+. . exported "MWD"."ORDER_ITEMS_JN"                      10.11 KB       1 rows
+. . exported "MWD"."ORDERS_JN"                           10.17 KB       3 rows
+. . exported "MWD"."OTHER_ITEMS_JN"                      7.945 KB       1 rows
+. . exported "MWD"."PERSONS"                             6.773 KB       3 rows
+. . exported "MWD"."PERSONS_JN"                             11 KB      19 rows
+. . exported "MWD"."RAW_INGREDIENTS_JN"                  7.953 KB       1 rows
+. . exported "MWD"."SALES_JN"                            9.671 KB       2 rows
+. . exported "MWD"."SET_ITEMS_JN"                        9.375 KB       3 rows
+. . exported "MWD"."SETS_JN"                             9.195 KB       1 rows
+. . exported "MWD"."STANDARD_WIRE_GAUGES"                7.296 KB      57 rows
+. . exported "MWD"."STANDARD_WIRE_GAUGES_JN"             11.77 KB      57 rows
+. . exported "MWD"."TOOLS_JN"                            7.992 KB       2 rows
+. . exported "MWD"."WEAVE_ARS"                           8.593 KB      68 rows
+. . exported "MWD"."WEAVE_ARS_JN"                        16.75 KB     127 rows
+. . exported "MWD"."WEAVES"                              26.72 KB      56 rows
+. . exported "MWD"."ACCESSORIES"                             0 KB       0 rows
+. . exported "MWD"."ACCESSORIES_JN"                          0 KB       0 rows
+. . exported "MWD"."ATTACHMENTS"                             0 KB       0 rows
+. . exported "MWD"."ATTACHMENTS_JN"                          0 KB       0 rows
+. . exported "MWD"."BEADS"                                   0 KB       0 rows
+. . exported "MWD"."BEADS_JN"                                0 KB       0 rows
+. . exported "MWD"."CHAINS"                                  0 KB       0 rows
+. . exported "MWD"."CHAINS_JN"                               0 KB       0 rows
+. . exported "MWD"."CLASPS"                                  0 KB       0 rows
+. . exported "MWD"."CLASPS_JN"                               0 KB       0 rows
+. . exported "MWD"."CRAFTED_INGREDIENTS"                     0 KB       0 rows
+. . exported "MWD"."CREATED_ITEMS"                           0 KB       0 rows
+. . exported "MWD"."INGREDIENTS"                             0 KB       0 rows
+. . exported "MWD"."ITEM_INGREDIENTS"                        0 KB       0 rows
+. . exported "MWD"."ITEM_ORDER_SOURCES"                      0 KB       0 rows
+. . exported "MWD"."ITEM_ORDER_SOURCES_JN"                   0 KB       0 rows
+. . exported "MWD"."ITEMS"                                   0 KB       0 rows
+. . exported "MWD"."ITEM_WEAVES"                             0 KB       0 rows
+. . exported "MWD"."ITEM_WEAVES_JN"                          0 KB       0 rows
+. . exported "MWD"."JEWELRY"                                 0 KB       0 rows
+. . exported "MWD"."JEWELRY_JN"                              0 KB       0 rows
+. . exported "MWD"."KIT_ITEMS"                               0 KB       0 rows
+. . exported "MWD"."KITS"                                    0 KB       0 rows
+. . exported "MWD"."LACE"                                    0 KB       0 rows
+. . exported "MWD"."LACE_JN"                                 0 KB       0 rows
+. . exported "MWD"."LEGAL_PERSONS"                           0 KB       0 rows
+. . exported "MWD"."LOCATION_ADDRESSES"                      0 KB       0 rows
+. . exported "MWD"."LOCATIONS"                               0 KB       0 rows
+. . exported "MWD"."NATURAL_PERSONS"                         0 KB       0 rows
+. . exported "MWD"."ORDER_ITEMS"                             0 KB       0 rows
+. . exported "MWD"."ORDERS"                                  0 KB       0 rows
+. . exported "MWD"."ORNAMENTS"                               0 KB       0 rows
+. . exported "MWD"."ORNAMENTS_JN"                            0 KB       0 rows
+. . exported "MWD"."OTHER_INGREDIENTS"                       0 KB       0 rows
+. . exported "MWD"."OTHER_INGREDIENTS_JN"                    0 KB       0 rows
+. . exported "MWD"."OTHER_ITEMS"                             0 KB       0 rows
+. . exported "MWD"."PURCHASES"                               0 KB       0 rows
+. . exported "MWD"."PURCHASES_JN"                            0 KB       0 rows
+. . exported "MWD"."RAW_INGREDIENTS"                         0 KB       0 rows
+. . exported "MWD"."RINGS"                                   0 KB       0 rows
+. . exported "MWD"."RINGS_JN"                                0 KB       0 rows
+. . exported "MWD"."SALES"                                   0 KB       0 rows
+. . exported "MWD"."SCALES"                                  0 KB       0 rows
+. . exported "MWD"."SCALES_JN"                               0 KB       0 rows
+. . exported "MWD"."SET_ITEMS"                               0 KB       0 rows
+. . exported "MWD"."SETS"                                    0 KB       0 rows
+. . exported "MWD"."STORE_ITEMS"                             0 KB       0 rows
+. . exported "MWD"."STORE_ITEMS_JN"                          0 KB       0 rows
+. . exported "MWD"."STORES"                                  0 KB       0 rows
+. . exported "MWD"."STORES_JN"                               0 KB       0 rows
+. . exported "MWD"."TOOLS"                                   0 KB       0 rows
+. . exported "MWD"."WIRES"                                   0 KB       0 rows
+. . exported "MWD"."WIRES_JN"                                0 KB       0 rows
+Master table "SYSTEM"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYSTEM.SYS_EXPORT_SCHEMA_01 is:
+  J:\ORACLE_HOME\ORACLE11G2XE\APP\TMP\SCHEMA.DMP
+Job "SYSTEM"."SYS_EXPORT_SCHEMA_01" successfully completed at 22:49:38
