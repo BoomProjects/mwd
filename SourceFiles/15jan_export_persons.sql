@@ -1,0 +1,111 @@
+--------------------------------------------------------
+--  File created - Tuesday-January-15-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table PERSONS
+--------------------------------------------------------
+
+  CREATE TABLE "MWD"."PERSONS" 
+   (	"PERSON_ID" NUMBER, 
+	"EMAIL" VARCHAR2(30 BYTE), 
+	"PHONE_FIXED" VARCHAR2(30 BYTE), 
+	"IS_COMPETITOR" CHAR(1 BYTE), 
+	"PERSON_TYPE" VARCHAR2(30 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS NOLOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "BP" ;
+REM INSERTING into MWD.PERSONS
+SET DEFINE OFF;
+Insert into MWD.PERSONS (PERSON_ID,EMAIL,PHONE_FIXED,IS_COMPETITOR,PERSON_TYPE) values ('1','GERDIENBOOM@HOTMAIL.COM','0031546572511','N','LEGAL_PERSON');
+Insert into MWD.PERSONS (PERSON_ID,EMAIL,PHONE_FIXED,IS_COMPETITOR,PERSON_TYPE) values ('2','ANONYMOUS','ANONYMOUS','N','NATURAL_PERSON');
+Insert into MWD.PERSONS (PERSON_ID,EMAIL,PHONE_FIXED,IS_COMPETITOR,PERSON_TYPE) values ('3','carinaboom@gmail.com','0031612897532','N','LEGAL_PERSON');
+--------------------------------------------------------
+--  DDL for Index PERSONS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "MWD"."PERSONS_PK" ON "MWD"."PERSONS" ("PERSON_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOLOGGING 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "BP" ;
+--------------------------------------------------------
+--  DDL for Trigger PERSONS_BRIU
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "MWD"."PERSONS_BRIU" 
+    BEFORE INSERT OR UPDATE ON MWD.PERSONS 
+    FOR EACH ROW 
+DECLARE 
+	pers_id 	number; 
+BEGIN 
+  if inserting then   
+    if :new.person_id is null then 
+      select pers_seq.nextval 
+        into pers_id 
+        from dual; 
+      :new.person_id := pers_id; 
+    end if; 
+  end if; 
+END; 
+
+/
+ALTER TRIGGER "MWD"."PERSONS_BRIU" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger PERSONS_JNTRG
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "MWD"."PERSONS_JNTRG" 
+  AFTER 
+  INSERT OR 
+  UPDATE OR 
+  DELETE ON MWD.PERSONS for each row 
+ Declare 
+  rec MWD.PERSONS_JN%ROWTYPE; 
+  blank MWD.PERSONS_JN%ROWTYPE; 
+  BEGIN 
+    rec := blank; 
+    IF INSERTING OR UPDATING THEN 
+      rec.PERSON_ID := :NEW.PERSON_ID; 
+      rec.EMAIL := :NEW.EMAIL; 
+      rec.PHONE_FIXED := :NEW.PHONE_FIXED; 
+      rec.IS_COMPETITOR := :NEW.IS_COMPETITOR; 
+      rec.PERSON_TYPE := :NEW.PERSON_TYPE; 
+      rec.JN_DATETIME := SYSDATE; 
+      rec.JN_ORACLE_USER := SYS_CONTEXT ('USERENV', 'SESSION_USER'); 
+      rec.JN_APPLN := SYS_CONTEXT ('USERENV', 'MODULE'); 
+      rec.JN_SESSION := SYS_CONTEXT ('USERENV', 'SESSIONID'); 
+      IF INSERTING THEN 
+        rec.JN_OPERATION := 'INS'; 
+      ELSIF UPDATING THEN 
+        rec.JN_OPERATION := 'UPD'; 
+      END IF; 
+    ELSIF DELETING THEN 
+      rec.PERSON_ID := :OLD.PERSON_ID; 
+      rec.EMAIL := :OLD.EMAIL; 
+      rec.PHONE_FIXED := :OLD.PHONE_FIXED; 
+      rec.IS_COMPETITOR := :OLD.IS_COMPETITOR; 
+      rec.PERSON_TYPE := :OLD.PERSON_TYPE; 
+      rec.JN_DATETIME := SYSDATE; 
+      rec.JN_ORACLE_USER := SYS_CONTEXT ('USERENV', 'SESSION_USER'); 
+      rec.JN_APPLN := SYS_CONTEXT ('USERENV', 'MODULE'); 
+      rec.JN_SESSION := SYS_CONTEXT ('USERENV', 'SESSIONID'); 
+      rec.JN_OPERATION := 'DEL'; 
+    END IF; 
+    INSERT into MWD.PERSONS_JN VALUES rec; 
+  END; 
+
+/
+ALTER TRIGGER "MWD"."PERSONS_JNTRG" ENABLE;
+--------------------------------------------------------
+--  Constraints for Table PERSONS
+--------------------------------------------------------
+
+  ALTER TABLE "MWD"."PERSONS" ADD CONSTRAINT "PERSONS_PK" PRIMARY KEY ("PERSON_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOLOGGING 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "BP"  ENABLE;
+  ALTER TABLE "MWD"."PERSONS" MODIFY ("IS_COMPETITOR" NOT NULL ENABLE);
+  ALTER TABLE "MWD"."PERSONS" MODIFY ("PERSON_ID" NOT NULL ENABLE);
