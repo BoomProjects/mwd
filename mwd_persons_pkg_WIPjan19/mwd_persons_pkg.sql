@@ -19,7 +19,7 @@ create or replace package MWD_PERSONS_PKG as
     procedure insert_person(
         p_person in persons%rowtype,
 		p_natural_person in natural_persons%rowtype default null,
-		p_legal_person in legalpersons%rowtype default null,
+		p_legal_person in legal_persons%rowtype default null,
 		p_person_id out persons.person_id%type
     );
 	
@@ -33,7 +33,7 @@ create or replace package MWD_PERSONS_PKG as
 		p_person_id in persons.person_id%type
 	);
         
-end MWD_PERSONS_PKG;​
+end MWD_PERSONS_PKG;
 
 / 
 
@@ -62,15 +62,21 @@ create or replace package body MWD_PERSONS_PKG as
     is
         v_query varchar2(5000);
     begin
-		v_query := 'select 
-						CASE WHEN (p.person_type = ''LEGAL_PERSON'') THEN l.legal_name ELSE 
-							(CASE WHEN n.first_name IS NULL THEN '''' ELSE n.first_name  || ' ' END) || 
+		v_query := 'SELECT
+						(CASE WHEN p.person_type = ''LEGAL_PERSON''
+                            THEN l.legal_name
+                        ELSE
+							CASE WHEN n.first_name IS NULL THEN '''' ELSE n.first_name || '' '' END ||
 							n.last_name END) as display,            
 						p.person_id as return
 						from PERSONS p
-						order by 1';
+                        LEFT JOIN LEGAL_PERSONS l
+                            ON p.person_id = l.person_id
+                        LEFT JOIN NATURAL_PERSONS n
+                            ON p.person_id = n.person_id
+                        order by 1';
 		return v_query;
-    end get_persons_query;
+    end get_persons_lov_query;
 	
 	function get_person_id_by_ak(
 		p_email in persons.email%type,
@@ -111,15 +117,10 @@ create or replace package body MWD_PERSONS_PKG as
 	begin
 		insert into MWD.PERSONS values p_person;
 		
-		if p_legal_person is not null	
-			then
-				insert_legal_person(p_legal => p_legal_person);
-		end if;
-		
-		if p_natural_person is not null	
-			then
-				insert_natural_person(p_natural => p_natural_person);
-		end if;
+		insert_legal_person(p_legal => p_legal_person);
+
+		insert_natural_person(p_natural => p_natural_person);
+
 	end insert_person;
 	
 	procedure update_natural_person(
@@ -146,8 +147,8 @@ create or replace package body MWD_PERSONS_PKG as
 	
 	procedure update_person(
 	    p_person in persons%rowtype,
-		p_natural_person in persons%rowtype default null,
-		p_legal_person in persons%rowtype default null
+		p_natural_person in natural_persons%rowtype default null,
+		p_legal_person in legal_persons%rowtype default null
     ) AS
 	begin
 		update MWD.PERSONS 
@@ -158,15 +159,9 @@ create or replace package body MWD_PERSONS_PKG as
 				, person_type = p_person.person_type
 			where person_id = p_person.person_id;
 		
-		if p_legal_person is not null	
-			then
-				update_legal_person(p_legal => p_legal_person);
-		end if;
-		
-		if p_natural_person is not null	
-			then
-				update_natural_person(p_natural => p_natural_person);
-		end if;
+		update_legal_person(p_legal => p_legal_person);
+
+		update_natural_person(p_natural => p_natural_person);
 	end update_person;
 	
 	procedure delete_person(
@@ -183,4 +178,4 @@ create or replace package body MWD_PERSONS_PKG as
 			where person_id = p_person_id;
 	end delete_person;
 
-end MWD_PERSONS_PKG;​
+end MWD_PERSONS_PKG;
