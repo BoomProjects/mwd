@@ -1,9 +1,10 @@
 /*
- * MWD_PERSONS_PKG is een proof of concept package voor alle DML operations op Persons. 
- * Dit creert een single point of reference.
- * Run deze code om de package te creëren. 
- * De aanroepin process save zou dan zijn
- * => BEGIN MWD_PERSONS_PKG.insert(P_PERSON => :P_PERSON);
+ * MWD_PERSONS_PKG is a proof of concept package for TAPI DML operations on Persons. 
+ * This creates a single point of reference in which can be made sure business rules are implemented. 
+ * Many TAPI scripts exist - MWD chose for personal research to make one from scratch.
+ * Run this code to create the package. 
+ * The process call would be inside a page package:
+ * => BEGIN MWD_PERSONS_PKG.update_person(P_PERSON => V_PERSON, P_NATURAL_PERSON => V_NATURAL);
  */
 
 create or replace package MWD_PERSONS_PKG as

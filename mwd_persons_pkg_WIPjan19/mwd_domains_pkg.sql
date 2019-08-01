@@ -1,9 +1,10 @@
 /*
- * MWD_DOMAINS_PKG is een werkend proof of concept om LOV's binnen een pl/sql package te definieren.
- * Dit zodat niet vele LOV's met bijna gelijke code gedefinieerd hoeven te worden. 
- * Dit creert een single point of reference.
- * Run deze code om de package te creëren. 
- * De aanroep op bijv. pagina 3010 van de APEX applicatie, onder de LOV definitie zou zijn:
+ * MWD_DOMAINS_PKG is used to define LOV's dynamically within a pl/sql package.
+ * Purpose is that LOV's do not have to be created with near-identical code. 
+ * MWD contains a DOMAINS table in which all LOVs have been defined.
+ * This creates a single point of reference.
+ * Run this code to create the package. 
+ * The call on any APEX page, under the LOV definition would be:
  * => RETURN MWD_DOMAINS_PKG.get_domain_values_query(P_DOMAIN_NAME => :P_DOMAIN_NAME_LOV);
  */
 
